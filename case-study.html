@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f1e8" />
+    <meta name="description" content="Quy trình trích xuất, kiểm tra và phân tích dữ liệu ILO đằng sau câu chuyện về AI và công việc." />
+    <title>Đằng sau dữ liệu — Chuyện nghề và AI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="editorial.css" />
+    <link rel="stylesheet" href="case-study.css" />
+    <script src="data/story-data.js" defer></script>
+    <script src="case-study.js" defer></script>
+  </head>
+  <body class="case-page">
+    <header class="site-header">
+      <a class="brand" href="index.html#dau-trang"><span class="brand-icon" aria-hidden="true">✳</span> chuyện nghề<b>.</b></a>
+      <nav aria-label="Điều hướng chính">
+        <a href="index.html#dau-trang">Câu chuyện</a>
+        <a href="#ket-qua">Kết quả</a>
+        <a href="#tai-lieu">Dữ liệu</a>
+      </nav>
+      <span class="header-meta">Hồ sơ phân tích · ILO 2025</span>
+    </header>
+
+    <main>
+      <section class="case-hero" aria-labelledby="case-title">
+        <div class="case-hero-copy">
+          <p class="case-kicker">01 / HỒ SƠ DỰ ÁN</p>
+          <h1 id="case-title">Đằng sau <em>câu chuyện bằng dữ liệu.</em></h1>
+          <p>Trang scrollytelling dùng các ước tính việc làm đã công bố và bảng điểm nghề trong ILO Working Paper 140. Quy trình dưới đây cho thấy dữ liệu được lấy, kiểm tra, tính toán và đưa vào biểu đồ như thế nào.</p>
+          <a class="case-text-link" href="index.html#dau-trang">← Xem lại câu chuyện</a>
+        </div>
+        <div class="case-hero-stats" aria-label="Quy mô dữ liệu phân tích">
+          <div><strong id="count-all">427</strong><span>mã nghề ISCO-08 trong phụ lục</span></div>
+          <div><strong id="count-exposed">112</strong><span>mã nghề thuộc nhóm tiếp xúc 1–4</span></div>
+          <div><strong id="count-examples">06</strong><span>nghề được chọn để minh họa</span></div>
+        </div>
+      </section>
+
+      <section class="case-section case-question" aria-labelledby="question-title">
+        <div class="case-section-label">CÂU HỎI PHÂN TÍCH</div>
+        <div>
+          <h2 id="question-title">AI tạo sinh có thể chạm tới những nhóm việc làm nào?</h2>
+          <p>Nghiên cứu ILO đo <strong>tiềm năng tiếp xúc của nghề</strong> qua nhiệm vụ, rồi ước tính tỷ trọng việc làm trong các nhóm tiếp xúc. Bài phân tích này so sánh các nhóm và kiểm tra cách các con số được trình bày. Nó không dùng dữ liệu cá nhân và không dự báo ai sẽ mất việc.</p>
+        </div>
+      </section>
+
+      <section class="case-section case-process" aria-labelledby="process-title">
+        <div class="case-section-label">QUY TRÌNH</div>
+        <div>
+          <h2 id="process-title">Từ PDF gốc tới biểu đồ</h2>
+          <ol>
+            <li><b>01</b><div><h3>Trích xuất</h3><p>Đọc bảng A1 từ PDF và 3.265 mục nhiệm vụ trong dữ liệu trực quan được tác giả liên kết từ bài báo. Giữ mã ISCO để nối hai nguồn.</p></div></li>
+            <li><b>02</b><div><h3>Chuẩn hóa và đối soát</h3><p>Chuẩn hóa nhãn nhóm, tách điểm số khỏi mô tả nhiệm vụ; kiểm tra mã không trùng, điểm trong khoảng 0–1 và tổng bốn nhóm bằng 112 nghề.</p></div></li>
+            <li><b>03</b><div><h3>Phân tích bằng SQL</h3><p>Gộp điểm nhiệm vụ theo nghề để đối chiếu phụ lục, tính số mã nghề và khoảng điểm theo nhóm, rồi nối sáu nghề minh họa.</p></div></li>
+            <li><b>04</b><div><h3>Xuất dữ liệu cho trang</h3><p>Python tạo tệp JSON và JavaScript từ kết quả đã kiểm tra. Biểu đồ nghề, câu đố và các phần tương tác đọc cùng bộ dữ liệu này.</p></div></li>
+          </ol>
+          <div class="case-quality"><span>KIỂM TRA CHÉO</span><strong id="qa-count">426/427</strong><p>Điểm trung bình tính lại từ nhiệm vụ lệch không quá 0,01 so với phụ lục ở 426 nghề. Mã <b id="qa-code">7126</b> có chênh lệch lớn nhất; hồ sơ kỹ thuật ghi rõ hai giá trị và giữ số của phụ lục khi vẽ biểu đồ nghề.</p></div>
+        </div>
+      </section>
+
+      <section class="case-results" id="ket-qua" aria-labelledby="results-title">
+        <div class="case-results-heading">
+          <div><p class="case-kicker">02 / KẾT QUẢ</p><h2 id="results-title">Hai mẫu số, hai cách đọc.</h2></div>
+          <p>Bảng phụ lục đếm <strong>mã nghề</strong>. Ước tính trong báo cáo đếm <strong>việc làm</strong>. Không thể lấy tỷ trọng mã nghề làm tỷ lệ người lao động.</p>
+        </div>
+        <div class="case-chart-grid">
+          <figure class="case-chart-card">
+            <figcaption><span>A / BẢNG A1</span><strong>Số mã nghề theo mức tiếp xúc</strong><small>Mỗi mã nghề có trọng số bằng nhau; không phải tỷ lệ việc làm.</small></figcaption>
+            <div id="profile-chart" class="profile-chart" role="img" aria-label="Số mã nghề ISCO-08 theo sáu nhóm tiếp xúc"></div>
+            <p class="case-chart-note">Tổng: <span id="profile-total">427</span> mã nghề ISCO-08.</p>
+          </figure>
+          <figure class="case-chart-card case-chart-card--income">
+            <figcaption><span>B / ƯỚC TÍNH ILO</span><strong>Tỷ lệ việc làm có tiếp xúc</strong><small>Trong bốn nhóm tiếp xúc, theo nhóm thu nhập quốc gia.</small></figcaption>
+            <div class="case-income-row"><span>Thu nhập thấp</span><div class="case-income-track"><i id="case-low-bar"></i></div><b id="case-low-value">11%</b></div>
+            <div class="case-income-row"><span>Thu nhập cao</span><div class="case-income-track"><i id="case-high-bar"></i></div><b id="case-high-value">34%</b></div>
+            <p class="case-income-gap"><strong id="case-gap-value">23</strong> điểm phần trăm chênh lệch</p>
+            <p class="case-chart-note">Đây là tỷ lệ việc làm theo mô hình ước tính của ILO, không suy ra từ bảng đếm mã nghề bên trái.</p>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section case-interpretation" aria-labelledby="interpretation-title">
+        <div class="case-section-label">DIỄN GIẢI</div>
+        <div>
+          <h2 id="interpretation-title">Điều dữ liệu cho thấy — và chưa cho thấy</h2>
+          <div class="case-insights">
+            <article><span>01</span><h3>Khác biệt về cơ cấu nghề</h3><p>Tỷ lệ việc làm thuộc nhóm tiếp xúc ở nước thu nhập cao lớn hơn nước thu nhập thấp <strong>23 điểm phần trăm</strong>. Đây là so sánh mô tả, không chứng minh mức áp dụng AI thực tế.</p></article>
+            <article><span>02</span><h3>Điểm trung bình không quyết định toàn bộ nhóm</h3><p>Khoảng điểm của các nhóm trong phụ lục có chồng lấn. Vì vậy, chỉ nhìn điểm trung bình của một nghề để tự xếp nhóm sẽ bỏ qua cách phân loại của ILO.</p></article>
+            <article><span>03</span><h3>Tiếp xúc không phải mất việc</h3><p>Chỉ số xem công nghệ có thể tác động đến nhiệm vụ nào. Nó không đo số việc làm bị thay thế, tốc độ triển khai của doanh nghiệp hay thay đổi thu nhập.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-download" id="tai-lieu" aria-labelledby="files-title">
+        <p class="case-kicker">03 / KIỂM CHỨNG</p>
+        <h2 id="files-title">Tự chạy lại phân tích.</h2>
+        <p>Chạy <code>python analysis/extract_table_a1.py --check</code> để đối chiếu CSV với PDF ILO; chạy <code>python analysis/build_data.py --check</code> để kiểm tra dữ liệu xuất ra vẫn khớp nguồn.</p>
+        <div class="case-file-links">
+          <a href="data/ilo_occupations.csv">427 nghề · CSV <span>↓</span></a>
+          <a href="data/ilo_tasks.csv">3.265 nhiệm vụ · CSV <span>↓</span></a>
+          <a href="data/ilo_indicators.csv">Chỉ số báo cáo · CSV <span>↓</span></a>
+          <a href="analysis/queries.sql">Truy vấn SQL <span>↗</span></a>
+          <a href="data/occupation_reconciliation.csv">Đối chiếu điểm nghề · CSV <span>↓</span></a>
+          <a href="CASE_STUDY.md">Ghi chú phân tích đầy đủ <span>↗</span></a>
+        </div>
+        <div class="case-sources">
+          <strong>Nguồn chính</strong>
+          <a href="https://www.ilo.org/sites/default/files/2025-05/Research%20brief_FINAL_15May2025_21.05.25_1.pdf" target="_blank" rel="noopener noreferrer">ILO Research Brief 2025, trang 7 ↗</a>
+          <a href="https://www.ilo.org/sites/default/files/2025-05/WP140_web.pdf" target="_blank" rel="noopener noreferrer">ILO Working Paper 140, phụ lục A1 ↗</a>
+          <a href="https://pgmyrek.github.io/2025_GenAI_scores_ISCO08/" target="_blank" rel="noopener noreferrer">Dữ liệu nhiệm vụ được liên kết trong Working Paper ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="case-footer"><span>Chuyện nghề và AI · 2025</span><a href="index.html#dau-trang">Quay lại câu chuyện ↑</a></footer>
+  </body>
+</html>

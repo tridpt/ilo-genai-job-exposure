@@ -1,0 +1,428 @@
+isco08_code,occupation_name_en,exposure_group,task_rows,annex_mean_score,task_mean_score,absolute_gap
+7126,Plumbers and Pipe Fitters,not_exposed,5,0.18,0.1515,0.0285
+1324,"Supply, Distribution and Related Managers",minimal_exposure,12,0.38,0.385,0.005
+2269,Health Professionals Not Elsewhere Classified,not_exposed,8,0.2,0.195,0.005
+3312,Credit and Loans Officers,gradient_4,6,0.6,0.605,0.005
+3339,Business Services Agents Not Elsewhere Classified,gradient_2,6,0.44,0.445,0.005
+4110,General Office Clerks,gradient_4,8,0.6,0.595,0.005
+4226,Receptionists (general),gradient_3,5,0.57,0.565,0.005
+4323,Transport Clerks,gradient_3,6,0.5,0.495,0.005
+4416,Personnel Clerks,gradient_4,7,0.6,0.605,0.005
+5165,Driving Instructors,not_exposed,6,0.2,0.205,0.005
+7513,Dairy Products Makers,not_exposed,8,0.22,0.215,0.005
+8121,Metal Processing Plant Operators,not_exposed,8,0.26,0.265,0.005
+8142,Plastic Products Machine Operators,not_exposed,7,0.17,0.175,0.005
+8151,"Fibre Preparing, Spinning and Winding Machine Operators",not_exposed,12,0.15,0.155,0.005
+8152,Weaving and Knitting Machine Operators,not_exposed,13,0.16,0.165,0.005
+8182,Steam Engine and Boiler Operators,not_exposed,7,0.2,0.195,0.005
+8312,"Railway Brake, Signal and Switch Operators",not_exposed,5,0.17,0.175,0.005
+8332,Heavy Truck and Lorry Drivers,minimal_exposure,6,0.24,0.245,0.005
+2654,"Film, Stage and Related Directors and Producers",minimal_exposure,7,0.37,0.3651,0.0049
+4221,Travel Consultants and Clerks,gradient_3,8,0.56,0.5551,0.0049
+7232,Aircraft Engine Mechanics and Repairers,not_exposed,10,0.19,0.1949,0.0049
+8343,"Crane, hoist and related plant operators",not_exposed,7,0.18,0.1751,0.0049
+2132,"Farming, Forestry and Fisheries Advisers",not_exposed,12,0.29,0.2852,0.0048
+3259,Health Associate Professionals Not Elsewhere Classified,minimal_exposure,7,0.3,0.3048,0.0048
+5111,Travel Attendants and Travel Stewards,not_exposed,11,0.22,0.2152,0.0048
+6221,Aquaculture Workers,not_exposed,10,0.22,0.2248,0.0048
+8122,"Metal Finishing, Plating and Coating Machine Operators",not_exposed,8,0.2,0.2048,0.0048
+2149,Engineering Professionals Not Elsewhere Classified,not_exposed,9,0.3,0.3047,0.0047
+2431,Advertising and Marketing Professionals,gradient_3,9,0.55,0.5547,0.0047
+6222,Inland and Coastal Waters Fishery Workers,not_exposed,10,0.17,0.1747,0.0047
+7511,"Butchers, Fishmongers and Related Food Preparers",not_exposed,8,0.13,0.1253,0.0047
+8171,Pulp and Papermaking Plant Operators,minimal_exposure,8,0.28,0.2753,0.0047
+9334,Shelf Fillers,not_exposed,8,0.2,0.2047,0.0047
+2412,Financial and Investment Advisers,gradient_3,6,0.57,0.5746,0.0046
+2631,Economists,gradient_3,12,0.55,0.5546,0.0046
+2641,Authors and Related Writers,gradient_3,6,0.55,0.5454,0.0046
+3131,Power Production Plant Operators,not_exposed,6,0.28,0.2754,0.0046
+3253,Community Health Workers,not_exposed,6,0.22,0.2246,0.0046
+3258,Ambulance Workers,not_exposed,6,0.22,0.2154,0.0046
+3324,Trade Brokers,gradient_2,6,0.44,0.4446,0.0046
+2513,Web and Multimedia Developers,gradient_4,5,0.6,0.6045,0.0045
+4322,Production Clerks,gradient_2,5,0.44,0.4355,0.0045
+4413,"Coding, Proofreading and Related Clerks",gradient_3,5,0.51,0.5145,0.0045
+5212,Street Food Salespersons,not_exposed,5,0.22,0.2245,0.0045
+5223,Shop Sales Assistants,gradient_1,5,0.38,0.3845,0.0045
+6223,Deep-sea Fishery Workers,not_exposed,9,0.18,0.1755,0.0045
+7221,"Blacksmiths, Hammersmiths and Forging Press Workers",not_exposed,7,0.17,0.1655,0.0045
+7222,Toolmakers and Related Workers,not_exposed,11,0.2,0.2045,0.0045
+7313,Jewellery and Precious Metal Workers,not_exposed,11,0.18,0.1755,0.0045
+7412,Electrical Mechanics and Fitters,not_exposed,7,0.17,0.1745,0.0045
+7515,Food and Beverage Tasters and Graders,minimal_exposure,5,0.31,0.3055,0.0045
+7521,Wood Treaters,not_exposed,8,0.22,0.2245,0.0045
+9520,Street Vendors (excluding Food),not_exposed,5,0.2,0.2045,0.0045
+3115,Mechanical Engineering Technicians,not_exposed,8,0.26,0.2644,0.0044
+3132,Incinerator and Water Treatment Plant Operators,not_exposed,8,0.27,0.2656,0.0044
+3314,"Statistical, Mathematical and Related Associate Professionals",gradient_3,8,0.57,0.5656,0.0044
+4229,Client Information Workers Not Elsewhere Classified,gradient_2,6,0.42,0.4156,0.0044
+5230,Cashiers and Ticket Clerks,gradient_1,8,0.39,0.3944,0.0044
+7317,"Handicraft Workers in Wood, Basketry and Related Materials",not_exposed,11,0.14,0.1356,0.0044
+9613,Sweepers and Related Labourers,not_exposed,4,0.09,0.0944,0.0044
+2523,Computer Network Professionals,gradient_3,7,0.52,0.5157,0.0043
+2642,Journalists,gradient_3,10,0.54,0.5357,0.0043
+2655,Actors,minimal_exposure,7,0.31,0.3143,0.0043
+6310,Subsistence Crop Farmers,not_exposed,7,0.13,0.1257,0.0043
+7123,Plasterers,not_exposed,7,0.11,0.1143,0.0043
+2151,Electrical Engineers,not_exposed,6,0.31,0.3142,0.0042
+2636,Religious Professionals,not_exposed,9,0.17,0.1658,0.0042
+3423,Fitness and Recreation Instructors and Programme Leaders,not_exposed,6,0.25,0.2458,0.0042
+4224,Hotel Receptionists,gradient_3,9,0.51,0.5142,0.0042
+6113,"Gardeners, Horticultural and Nursery Growers",not_exposed,12,0.18,0.1842,0.0042
+8131,Chemical Products Plant and Machine Operators,not_exposed,6,0.24,0.2442,0.0042
+9214,Garden and Horticultural Labourers,not_exposed,9,0.12,0.1158,0.0042
+1120,Managing Directors and Chief Executives,minimal_exposure,11,0.38,0.3759,0.0041
+1420,Retail and Wholesale Trade Managers,gradient_2,7,0.44,0.4359,0.0041
+3251,Dental Assistants and Therapists,not_exposed,8,0.16,0.1641,0.0041
+3422,"Sports Coaches, Instructors and Officials",minimal_exposure,11,0.37,0.3741,0.0041
+7311,Precision-instrument Makers and Repairers,not_exposed,12,0.21,0.2141,0.0041
+7531,"Tailors, Dressmakers, Furriers and Hatters",not_exposed,11,0.15,0.1459,0.0041
+9215,Forestry Labourers,not_exposed,8,0.09,0.0941,0.0041
+2522,Systems Aministrators,gradient_3,5,0.57,0.566,0.004
+3119,Physical and Engineering Science Technicians Not Elsewhere Classified,not_exposed,5,0.26,0.256,0.004
+3153,Aircraft Pilots and Related Associate Professionals,not_exposed,7,0.27,0.274,0.004
+3256,Medical Assistants,gradient_1,10,0.35,0.346,0.004
+3323,Buyers,minimal_exposure,10,0.39,0.394,0.004
+4212,"Bookmakers, Croupiers and Related Gaming Workers",gradient_2,5,0.45,0.446,0.004
+4214,Debt Collectors and Related Workers,gradient_2,5,0.43,0.426,0.004
+4225,Inquiry Clerks,gradient_3,5,0.57,0.574,0.004
+5120,Cooks,not_exposed,7,0.18,0.184,0.004
+7131,Painters and Related Workers,not_exposed,5,0.13,0.126,0.004
+7316,"Sign Writers, Decorative Painters, Engravers and Etchers",not_exposed,14,0.18,0.184,0.004
+8155,Fur and Leather Preparing Machine Operators,not_exposed,11,0.15,0.146,0.004
+8172,Wood Processing Plant Operators,not_exposed,5,0.14,0.144,0.004
+2230,Traditional and Complementary Medicine Professionals,minimal_exposure,7,0.32,0.3239,0.0039
+2265,Dieticians and Nutritionists,minimal_exposure,7,0.41,0.4139,0.0039
+6111,Field Crop and Vegetable Growers,not_exposed,11,0.18,0.1761,0.0039
+7233,Agricultural and Industrial Machinery Mechanics and Repairers,not_exposed,7,0.17,0.1739,0.0039
+9313,Building Construction Labourers,not_exposed,6,0.09,0.0939,0.0039
+2152,Electronics Engineers,gradient_2,8,0.42,0.4238,0.0038
+3133,Chemical Processing Plant Controllers,not_exposed,6,0.29,0.2938,0.0038
+3252,Medical Records and Health Information Technicians,gradient_3,6,0.52,0.5162,0.0038
+3343,Administrative and Executive Secretaries,gradient_3,8,0.54,0.5363,0.0038
+5153,Building Caretakers,minimal_exposure,8,0.27,0.2662,0.0038
+7121,Roofers,not_exposed,6,0.13,0.1263,0.0038
+7215,Riggers and Cable Splicers,not_exposed,6,0.13,0.1263,0.0038
+7413,Electrical Line Installers and Repairers,not_exposed,6,0.15,0.1537,0.0038
+8322,"Car, Taxi and Van Drivers",gradient_1,8,0.28,0.2762,0.0038
+1343,Aged Care Service Managers,minimal_exposure,10,0.34,0.3438,0.0037
+2133,Environmental Protection Professionals,minimal_exposure,7,0.38,0.3837,0.0037
+2355,Other Arts Teachers,minimal_exposure,10,0.35,0.3463,0.0037
+7119,Building Frame and Related Trades Workers Not Elsewhere Classified,not_exposed,3,0.09,0.0937,0.0037
+7211,Metal Moulders and Coremakers,not_exposed,7,0.13,0.1337,0.0037
+7523,Woodworking Machine Tool Setters and Operators,not_exposed,6,0.22,0.2163,0.0037
+7549,Craft and Related Workers not Elsewhere Classified,not_exposed,2,0.14,0.1437,0.0037
+8114,"Cement, Stone and Other Mineral Products Machine Operators",not_exposed,10,0.23,0.2263,0.0037
+9121,Hand Launderers and Pressers,not_exposed,4,0.14,0.1437,0.0037
+1212,Human Resource Managers,minimal_exposure,11,0.36,0.3564,0.0036
+1349,Professional Services Managers Not Elsewhere Classified,minimal_exposure,9,0.38,0.3836,0.0036
+2112,Meteorologists,gradient_3,9,0.54,0.5364,0.0036
+2264,Physiotherapists,minimal_exposure,7,0.28,0.2836,0.0036
+2352,Special Needs Teachers,not_exposed,11,0.28,0.2836,0.0036
+2354,Other Music Teachers,minimal_exposure,11,0.35,0.3536,0.0036
+3112,Civil Engineering Technicians,not_exposed,9,0.28,0.2764,0.0036
+7213,Sheet Metal Workers,not_exposed,7,0.21,0.2064,0.0036
+7541,Underwater Divers,not_exposed,12,0.16,0.1564,0.0036
+8157,Laundry Machine Operators,not_exposed,9,0.16,0.1564,0.0036
+2653,Dancers and Choreographers,not_exposed,6,0.19,0.1935,0.0035
+4313,Payroll Clerks,gradient_4,5,0.61,0.6065,0.0035
+5163,Undertakers and Embalmers,not_exposed,6,0.17,0.1665,0.0035
+5322,Home-based Personal Care Workers,minimal_exposure,9,0.25,0.2465,0.0035
+7114,"Concrete Placers, Concrete Finishers and Related Workers",not_exposed,5,0.1,0.1035,0.0035
+7315,"Glass Makers, Cutters, Grinders and Finishers",not_exposed,13,0.19,0.1865,0.0035
+7516,Tobacco Preparers and Tobacco Products Makers,not_exposed,5,0.14,0.1435,0.0035
+8181,Glass and Ceramics Plant Operators,not_exposed,13,0.17,0.1735,0.0035
+2144,Mechanical Engineers,not_exposed,7,0.32,0.3234,0.0034
+2211,Generalist Medical Practitioners,not_exposed,11,0.29,0.2866,0.0034
+2240,Paramedical Practitioners,not_exposed,9,0.23,0.2334,0.0034
+2512,Software Developers,gradient_3,8,0.53,0.5266,0.0034
+2529,Database and Network Professionals Not Elsewhere Classified,gradient_2,8,0.49,0.4866,0.0034
+3116,Chemical Engineering Technicians,not_exposed,5,0.32,0.3234,0.0034
+4120,Secretaries (general),gradient_3,8,0.58,0.5766,0.0034
+9111,Domestic Cleaners and Helpers,not_exposed,7,0.14,0.1434,0.0034
+1112,Senior Government Officials,minimal_exposure,9,0.38,0.3767,0.0033
+2114,Geologists and geophysicists,minimal_exposure,12,0.36,0.3633,0.0033
+2622,Librarians and Related Information Professionals,gradient_3,9,0.55,0.5533,0.0033
+3321,Insurance Representatives,gradient_3,6,0.53,0.5267,0.0033
+4414,Scribes and Related Workers,gradient_3,3,0.58,0.5833,0.0033
+5161,"Astrologers, Fortune-tellers and Related Workers",minimal_exposure,6,0.3,0.2967,0.0033
+5169,Personal Services Workers Not Elsewhere Classified,not_exposed,3,0.21,0.2133,0.0033
+5411,Fire Fighters,not_exposed,6,0.18,0.1833,0.0033
+8212,Electrical and Electronic Equipment Assemblers,minimal_exposure,5,0.28,0.2767,0.0033
+2411,Accountants,gradient_3,8,0.51,0.5132,0.0032
+2611,Lawyers,minimal_exposure,10,0.36,0.3632,0.0032
+2635,Social Work and Counselling Professionals,not_exposed,11,0.28,0.2832,0.0032
+3155,Air Traffic Safety Electronics Technicians,minimal_exposure,9,0.34,0.3432,0.0032
+7318,"Handicraft Workers in Textile, Leather and Related Materials",not_exposed,14,0.13,0.1332,0.0032
+7544,Fumigators and Other Pest and Weed Controllers,not_exposed,7,0.13,0.1332,0.0032
+8160,Food and Related Products Machine Operators,not_exposed,7,0.15,0.1532,0.0032
+9623,Meter Readers and Vending-machine Collectors,gradient_1,7,0.38,0.3768,0.0032
+1111,Legislators,not_exposed,8,0.31,0.3131,0.0031
+2131,"Biologists, Botanists, Zoologists and Related Professionals",gradient_2,8,0.4,0.3969,0.0031
+2359,Teaching Professionals Not Elsewhere Classified,minimal_exposure,12,0.33,0.3269,0.0031
+2424,Training and Staff Development Professionals,gradient_2,8,0.41,0.4069,0.0031
+3222,Midwifery Associate Professionals,not_exposed,4,0.2,0.1969,0.0031
+3230,Traditional and Complementary Medicine Associate Professionals,not_exposed,6,0.19,0.1869,0.0031
+3352,Government Tax and Excise Officials,gradient_2,4,0.49,0.4931,0.0031
+5141,Hairdressers,not_exposed,8,0.17,0.1731,0.0031
+5142,Beauticians and Related Workers,not_exposed,8,0.18,0.1831,0.0031
+7125,Glaziers,not_exposed,4,0.14,0.1369,0.0031
+7127,Air Conditioning and Refrigeration Mechanics,not_exposed,4,0.21,0.2069,0.0031
+9411,Fast Food Preparers,not_exposed,9,0.18,0.1831,0.0031
+1342,Health Service Managers,minimal_exposure,10,0.36,0.363,0.003
+1345,Education Managers,minimal_exposure,11,0.36,0.363,0.003
+1411,Hotel Managers,gradient_1,10,0.37,0.373,0.003
+1412,Restaurant Managers,minimal_exposure,10,0.36,0.363,0.003
+2141,Industrial and Production Engineers,minimal_exposure,10,0.37,0.367,0.003
+2166,Graphic and Multimedia Designers,gradient_2,10,0.49,0.493,0.003
+2351,Education Methods Specialists,gradient_1,10,0.39,0.393,0.003
+3121,Mining Supervisors,not_exposed,5,0.29,0.287,0.003
+3522,Telecommunications Engineering Technicians,minimal_exposure,5,0.45,0.453,0.003
+6320,Subsistence Livestock Farmers,not_exposed,12,0.13,0.127,0.003
+7111,House Builders,not_exposed,7,0.14,0.137,0.003
+7534,Upholsterers and Related Workers,not_exposed,12,0.18,0.177,0.003
+9312,Civil Engineering Labourers,not_exposed,5,0.09,0.093,0.003
+9331,Hand and Pedal Vehicle Drivers,not_exposed,5,0.21,0.207,0.003
+2267,Optometrists and Ophthalmic Opticians,not_exposed,7,0.24,0.2371,0.0029
+2619,Legal Professionals Not Elsewhere Classified,minimal_exposure,4,0.37,0.3729,0.0029
+3122,Manufacturing Supervisors,minimal_exposure,6,0.35,0.3471,0.0029
+3212,Medical and Pathology Laboratory Technicians,minimal_exposure,10,0.31,0.3071,0.0029
+3355,Police Inspectors and Detectives,not_exposed,6,0.23,0.2329,0.0029
+7124,Insulation Workers,not_exposed,6,0.13,0.1271,0.0029
+1211,Finance Managers,minimal_exposure,8,0.37,0.3728,0.0028
+2621,Archivists and Curators,gradient_2,10,0.47,0.4728,0.0028
+3432,Interior Designers and Decorators,minimal_exposure,10,0.37,0.3672,0.0028
+4223,Telephone Switchboard Operators,gradient_3,5,0.54,0.5372,0.0028
+5419,Protective Services Workers Not Elsewhere Classified,not_exposed,5,0.2,0.1972,0.0028
+8341,Mobile Farm and Forestry Plant Operators,not_exposed,8,0.12,0.1228,0.0028
+3135,Metal Production Process Controllers,minimal_exposure,7,0.31,0.3073,0.0027
+9213,Mixed Crop and Livestock Farm Labourers,not_exposed,11,0.11,0.1127,0.0027
+1322,Mining Managers,minimal_exposure,10,0.35,0.3473,0.0026
+3221,Nursing Associate Professionals,minimal_exposure,6,0.22,0.2174,0.0026
+1223,Research and Development Managers,minimal_exposure,8,0.4,0.3975,0.0025
+1431,"Sports, Recreation and Cultural Centre Managers",minimal_exposure,9,0.32,0.3225,0.0025
+2113,Chemists,minimal_exposure,9,0.39,0.3875,0.0025
+2146,"Mining Engineers, Metallurgists and Related Professionals",not_exposed,9,0.29,0.2925,0.0025
+2434,Information and Communications Technology Sales Professionals,gradient_3,7,0.51,0.5125,0.0025
+2521,Database Designers and Administrators,gradient_3,6,0.57,0.5675,0.0025
+2612,Judges,not_exposed,7,0.31,0.3125,0.0025
+2643,"Translators, Interpreters and Other Linguists",gradient_3,6,0.59,0.5925,0.0025
+2656,"Announcers on Radio, Television and Other Media",gradient_2,5,0.47,0.4725,0.0025
+3111,Chemical and Physical Science Technicians,not_exposed,6,0.26,0.2575,0.0025
+3118,Draughtspersons,minimal_exposure,8,0.35,0.3475,0.0025
+3331,Clearing and Forwarding Aents,gradient_3,5,0.57,0.5725,0.0025
+3353,Government Social Benefits Officials,gradient_2,4,0.45,0.4525,0.0025
+4227,Survey and Market Research Interviewers,gradient_3,5,0.55,0.5475,0.0025
+4412,Mail Carriers and Sorting Clerks,gradient_2,4,0.41,0.4075,0.0025
+5242,Sales Demonstrators,gradient_2,5,0.42,0.4175,0.0025
+5413,Prison Guards,not_exposed,7,0.14,0.1375,0.0025
+5414,Security Guards,not_exposed,6,0.2,0.2025,0.0025
+6340,"Subsistence Fishers, Hunters, Trappers and Gatherers",not_exposed,8,0.12,0.1175,0.0025
+7421,Electronics Mechanics and Servicers,not_exposed,9,0.25,0.2475,0.0025
+8111,Miners and Quarriers,not_exposed,9,0.17,0.1725,0.0025
+8113,Well Drillers and Borers and Related Workers,not_exposed,10,0.19,0.1875,0.0025
+8156,Shoemaking and Related Machine Operators,not_exposed,3,0.16,0.1625,0.0025
+8159,"Textile, Fur and Leather Products Machine Operators Not Elsewhere Classified",not_exposed,5,0.16,0.1575,0.0025
+8183,"Packing, Bottling and Labelling Machine Operators",not_exposed,3,0.22,0.2225,0.0025
+8350,Ships' Deck Crews and Related Workers,not_exposed,6,0.14,0.1425,0.0025
+9321,Hand Packers,not_exposed,3,0.2,0.1975,0.0025
+2266,Audiologists and Speech Therapists,not_exposed,7,0.24,0.2376,0.0024
+6114,Mixed Crop Growers,not_exposed,11,0.17,0.1724,0.0024
+9332,Drivers of Animal-drawn Vehicles and Machinery,not_exposed,9,0.13,0.1324,0.0024
+2262,Pharmacists,minimal_exposure,13,0.33,0.3323,0.0023
+3257,Environmental and Occupational Health Inspectors and Associates,not_exposed,10,0.24,0.2423,0.0023
+4211,Bank Tellers and Related Clerks,gradient_3,6,0.58,0.5823,0.0023
+7522,Cabinet-makers and Related Workers,not_exposed,6,0.16,0.1623,0.0023
+8141,Rubber Products Machine Operators,not_exposed,6,0.18,0.1823,0.0023
+1221,Sales and Marketing Managers,gradient_2,8,0.41,0.4122,0.0022
+2632,"Sociologists, Anthropologists and Related Professionals",gradient_2,9,0.48,0.4778,0.0022
+3117,Mining and metallurgical technicians,not_exposed,8,0.28,0.2822,0.0022
+3152,Ships' Deck Officers and Pilots,not_exposed,8,0.29,0.2878,0.0022
+5162,Companions and Valets,not_exposed,3,0.22,0.2178,0.0022
+8153,Sewing Machine Operators,not_exposed,8,0.15,0.1478,0.0022
+9629,Elementary Workers Not Elsewhere Classified,minimal_exposure,8,0.29,0.2922,0.0022
+2142,Civil Engineers,not_exposed,7,0.3,0.3021,0.0021
+2153,Telecommunications Engineers,gradient_2,7,0.48,0.4821,0.0021
+2422,Policy Administration Professionals,minimal_exposure,7,0.42,0.4179,0.0021
+3313,Accounting Associate Professionals,gradient_2,6,0.49,0.4921,0.0021
+3332,Conference and Event Planners,gradient_2,7,0.48,0.4779,0.0021
+3334,Real Estate Agents and Property Managers,minimal_exposure,7,0.35,0.3521,0.0021
+4131,Typists and Word Processing Operators,gradient_4,7,0.65,0.6521,0.0021
+4419,Clerical Support Workers Not Elsewhere Classified,gradient_4,4,0.63,0.6279,0.0021
+7321,Pre-press Technicians,gradient_1,7,0.38,0.3821,0.0021
+9129,Other Cleaning Workers,not_exposed,6,0.1,0.1021,0.0021
+2221,Nursing Professionals,not_exposed,10,0.25,0.252,0.002
+2423,Personnel and Careers Professionals,gradient_2,5,0.45,0.448,0.002
+5241,Fashion and Other Models,not_exposed,5,0.25,0.248,0.002
+7231,Motor Vehicle Mechanics and Repairers,not_exposed,8,0.18,0.178,0.002
+7314,Potters and Related Workers,not_exposed,11,0.18,0.178,0.002
+7514,"Fruit, Vegetable and Related Preservers",not_exposed,5,0.15,0.148,0.002
+8112,Mineral and Stone Processing Plant Operators,not_exposed,10,0.21,0.208,0.002
+8344,Lifting Truck Operators,not_exposed,5,0.2,0.198,0.002
+2164,Town and Traffic Planners,minimal_exposure,8,0.41,0.4081,0.0019
+2250,Veterinarians,not_exposed,9,0.14,0.1419,0.0019
+2342,Early Childhood Educators,not_exposed,9,0.21,0.2081,0.0019
+2413,Financial Analysts,gradient_4,9,0.62,0.6181,0.0019
+5246,Food Service Counter Attendants,not_exposed,8,0.24,0.2381,0.0019
+7122,Floor Layers and Tile Setters,not_exposed,4,0.1,0.1019,0.0019
+7532,Garment and Related Patternmakers and Cutters,not_exposed,12,0.17,0.1681,0.0019
+9611,Garbage and Recycling Collectors,not_exposed,4,0.09,0.0919,0.0019
+1222,Advertising and Public Relations Managers,minimal_exposure,8,0.39,0.3882,0.0018
+2330,Secondary Education Teachers,not_exposed,11,0.3,0.2982,0.0018
+3421,Athletes and Sports Players,not_exposed,8,0.23,0.2283,0.0018
+3521,Broadcasting and Audio-visual Technicians,minimal_exposure,7,0.35,0.3518,0.0018
+7533,"Sewing, Embroidery and Related Workers",not_exposed,12,0.12,0.1218,0.0018
+1114,Senior Officials of Special-interest Organizations,minimal_exposure,9,0.37,0.3683,0.0017
+2320,Vocational Education Teachers,minimal_exposure,10,0.35,0.3483,0.0017
+3123,Construction Supervisors,not_exposed,6,0.28,0.2817,0.0017
+7133,Building Structure Cleaners,not_exposed,3,0.09,0.0917,0.0017
+7223,Metal Working Machine Tool Setters and Operators,not_exposed,6,0.18,0.1817,0.0017
+1323,Construction Managers,minimal_exposure,11,0.34,0.3384,0.0016
+2145,Chemical Engineers,minimal_exposure,8,0.35,0.3516,0.0016
+2432,Public Relations Professionals,gradient_2,8,0.43,0.4316,0.0016
+5244,Contact Centre Salespersons,gradient_4,8,0.61,0.6116,0.0016
+6123,Apiarists and Sericulturists,not_exposed,7,0.22,0.2216,0.0016
+8132,Photographic Products Machine Operators,not_exposed,8,0.27,0.2716,0.0016
+2120,"Mathematicians, Actuaries and Statisticians",gradient_3,10,0.56,0.5615,0.0015
+2212,Specialist Medical Practitioners,not_exposed,12,0.27,0.2715,0.0015
+3143,Forestry Technicians,not_exposed,10,0.21,0.2115,0.0015
+3151,Ships' Engineers,not_exposed,5,0.23,0.2315,0.0015
+3412,Social Work Associate Professionals,minimal_exposure,10,0.33,0.3285,0.0015
+6330,Subsistence Mixed Crop and Livestock Farmers,not_exposed,9,0.12,0.1185,0.0015
+8311,Locomotive Engine Drivers,not_exposed,5,0.2,0.1985,0.0015
+9212,Livestock Farm Labourers,not_exposed,10,0.12,0.1185,0.0015
+2143,Environmental Engineers,minimal_exposure,9,0.38,0.3814,0.0014
+2161,Building Architects,minimal_exposure,9,0.37,0.3714,0.0014
+3311,Securities and Finance Dealers and Brokers,gradient_4,5,0.63,0.6314,0.0014
+3514,Web Technicians,gradient_3,7,0.53,0.5286,0.0014
+4415,Filing and Copying Clerks,gradient_1,5,0.37,0.3686,0.0014
+5243,Door-to-door Salespersons,gradient_2,7,0.46,0.4586,0.0014
+7224,"Metal Polishers, Wheel Grinders and Tool Sharpeners",not_exposed,7,0.17,0.1686,0.0014
+7543,Product Graders and Testers (except Foods and Beverages),minimal_exposure,9,0.31,0.3086,0.0014
+8331,Bus and Tram Drivers,not_exposed,7,0.18,0.1786,0.0014
+8342,Earthmoving and Related Plant Operators,not_exposed,7,0.13,0.1314,0.0014
+9211,Crop Farm Labourers,not_exposed,8,0.09,0.0914,0.0014
+1321,Manufacturing Managers,minimal_exposure,12,0.38,0.3787,0.0013
+2165,Cartographers and Surveyors,gradient_2,8,0.44,0.4387,0.0013
+2633,"Philosophers, Historians and Political Scientists",gradient_2,8,0.47,0.4713,0.0013
+3341,Office Supervisors,gradient_2,6,0.43,0.4287,0.0013
+7112,Bricklayers and Related Workers,not_exposed,3,0.09,0.0887,0.0013
+7234,Bicycle and Related Repairers,not_exposed,6,0.13,0.1313,0.0013
+7411,Building and Related Electricians,not_exposed,8,0.19,0.1913,0.0013
+9123,Window Cleaners,not_exposed,3,0.11,0.1113,0.0013
+9612,Refuse Sorters,not_exposed,6,0.18,0.1812,0.0013
+2341,Primary School Teachers,not_exposed,10,0.26,0.2612,0.0012
+3141,Life Science Technicians (excluding Medical),gradient_1,13,0.38,0.3812,0.0012
+9112,"Cleaners and Helpers in Offices, Hotels and Other Establishments",not_exposed,4,0.12,0.1188,0.0012
+9510,Street and Related Service Workers,not_exposed,8,0.18,0.1788,0.0012
+5113,Travel Guides,minimal_exposure,9,0.32,0.3189,0.0011
+5312,Teachers' Aides,not_exposed,7,0.24,0.2411,0.0011
+6112,Tree and Shrub Crop Growers,not_exposed,11,0.17,0.1711,0.0011
+6210,Forestry and Related Workers,not_exposed,10,0.12,0.1189,0.0011
+7422,Information and Communications Technology Installers and Servicers,not_exposed,7,0.24,0.2389,0.0011
+9311,Mining and Quarrying Labourers,not_exposed,7,0.11,0.1089,0.0011
+1219,Business Services and Administration Managers Not Elsewhere Classified,gradient_2,10,0.42,0.419,0.001
+2514,Applications Programmers,gradient_3,5,0.57,0.571,0.001
+3240,Veterinary Technicians and Assistants,not_exposed,10,0.14,0.141,0.001
+3315,Valuers and Loss Assessors,gradient_2,5,0.45,0.449,0.001
+4321,Stock Clerks,minimal_exposure,5,0.37,0.369,0.001
+5132,Bartenders,not_exposed,10,0.26,0.261,0.001
+7536,Shoemakers and Related Workers,not_exposed,13,0.17,0.169,0.001
+8219,Assemblers Not Elsewhere Classified,minimal_exposure,5,0.32,0.319,0.001
+9122,Vehicle Cleaners,not_exposed,6,0.09,0.089,0.001
+2222,Midwifery Professionals,minimal_exposure,8,0.3,0.2991,0.0009
+2353,Other Language Teachers,minimal_exposure,8,0.34,0.3391,0.0009
+3351,Customs and Border Inspectors,minimal_exposure,8,0.32,0.3209,0.0009
+3511,Information and Communications Technology Operations Technicians,gradient_2,8,0.43,0.4291,0.0009
+7512,"Bakers, Pastry-cooks and Confectionery Makers",not_exposed,8,0.17,0.1691,0.0009
+1344,Social Welfare Managers,minimal_exposure,10,0.37,0.3692,0.0008
+2162,Landscape Architects,minimal_exposure,9,0.37,0.3708,0.0008
+2261,Dentists,not_exposed,12,0.15,0.1492,0.0008
+3411,Legal and Related Associate Professionals,gradient_1,10,0.39,0.3908,0.0008
+4222,Contact Centre Information Clerks,gradient_3,6,0.58,0.5808,0.0008
+5321,Health Care Assistants,not_exposed,6,0.14,0.1408,0.0008
+6122,Poultry Producers,not_exposed,12,0.19,0.1892,0.0008
+7132,Spray Painters and Varnishers,not_exposed,3,0.12,0.1192,0.0008
+7214,Structural Metal Preparers and Erectors,not_exposed,6,0.11,0.1108,0.0008
+8143,Paper Products Machine Operators,not_exposed,3,0.18,0.1808,0.0008
+9333,Freight Handlers,not_exposed,6,0.14,0.1408,0.0008
+9624,Water and Firewood Collectors,not_exposed,6,0.09,0.0892,0.0008
+1213,Policy and Planning Managers,not_exposed,9,0.36,0.3593,0.0007
+1346,Financial and Insurance Services Branch managers,gradient_2,11,0.47,0.4693,0.0007
+2433,Technical and Medical Sales Professionals (excluding ICT),gradient_3,12,0.5,0.4993,0.0007
+3142,Agricultural Technicians,not_exposed,9,0.26,0.2593,0.0007
+5112,Transport Conductors,minimal_exposure,10,0.25,0.2493,0.0007
+5131,Waiters,minimal_exposure,7,0.28,0.2807,0.0007
+5164,Pet Groomers and Animal Care Workers,not_exposed,9,0.14,0.1407,0.0007
+5221,Shopkeepers,gradient_2,7,0.43,0.4307,0.0007
+1341,Child Care Service Managers,minimal_exposure,9,0.3,0.2994,0.0006
+2310,University and Higher Education Teachers,minimal_exposure,9,0.37,0.3694,0.0006
+2634,Psychologists,gradient_1,9,0.39,0.3906,0.0006
+2659,Creative and Performing Artists Not Elsewhere Classified,not_exposed,4,0.13,0.1294,0.0006
+5152,Domestic Housekeepers,not_exposed,9,0.2,0.1994,0.0006
+5245,Service Station Attendants,minimal_exposure,8,0.24,0.2406,0.0006
+5412,Police Officers,not_exposed,4,0.14,0.1394,0.0006
+7113,"Stonemasons, Stone Cutters, Splitters and Carvers",not_exposed,7,0.11,0.1094,0.0006
+7322,Printers,not_exposed,9,0.25,0.2494,0.0006
+1113,Traditional Chiefs and Heads of Villages,not_exposed,7,0.23,0.2305,0.0005
+3134,Petroleum and Natural Gas Refining Plant Operators,not_exposed,5,0.29,0.2905,0.0005
+3354,Government Licensing Officials,gradient_2,5,0.43,0.4305,0.0005
+3413,Religious Associate Professionals,not_exposed,6,0.12,0.1205,0.0005
+3434,Chefs,not_exposed,10,0.25,0.2505,0.0005
+4213,Pawnbrokers and Money-lenders,gradient_2,5,0.48,0.4805,0.0005
+4312,"Statistical, Finance and Insurance Clerks",gradient_4,5,0.64,0.6395,0.0005
+5311,Child Care Workers,not_exposed,8,0.19,0.1905,0.0005
+7115,Carpenters and Joiners,not_exposed,5,0.13,0.1295,0.0005
+8211,Mechanical Machinery Assemblers,minimal_exposure,5,0.27,0.2695,0.0005
+9216,Fishery and Aquaculture Labourers,not_exposed,7,0.11,0.1105,0.0005
+1312,Aquaculture and Fisheries Production Managers,not_exposed,13,0.22,0.2196,0.0004
+3114,Electronics Engineering Technicians,minimal_exposure,7,0.38,0.3796,0.0004
+3342,Legal Secretaries,gradient_3,7,0.55,0.5504,0.0004
+4411,Library Clerks,gradient_2,6,0.46,0.4604,0.0004
+5211,Stall and Market Salespersons,gradient_1,7,0.35,0.3496,0.0004
+5329,Personal Care Workers in Health Services Not Elsewhere Classified,not_exposed,6,0.15,0.1504,0.0004
+7535,"Pelt Dressers, Tanners and Fellmongers",not_exposed,13,0.11,0.1096,0.0004
+7542,Shotfirers and Blasters,not_exposed,11,0.12,0.1196,0.0004
+9412,Kitchen Helpers,not_exposed,6,0.13,0.1296,0.0004
+1311,Agricultural and Forestry Production Managers,minimal_exposure,12,0.27,0.2697,0.0003
+2163,Product and Garment Designers,minimal_exposure,9,0.35,0.3497,0.0003
+2652,"Musicians, Singers and Composers",not_exposed,8,0.28,0.2803,0.0003
+3344,Medical Secretaries,gradient_3,8,0.53,0.5303,0.0003
+3431,Photographers,gradient_1,8,0.39,0.3903,0.0003
+3433,"Gallery, Museum and Library Technicians",gradient_1,9,0.37,0.3703,0.0003
+3512,Information and Communications Technology User Support Technicians,gradient_2,9,0.47,0.4703,0.0003
+5222,Shop Supervisors,minimal_exposure,8,0.36,0.3603,0.0003
+6224,Hunters and Trappers,not_exposed,5,0.09,0.0897,0.0003
+7212,Welders and Flame Cutters,not_exposed,8,0.13,0.1303,0.0003
+7312,Musical Instrument Makers and Tuners,not_exposed,11,0.14,0.1403,0.0003
+1330,Information and Communications Technology Service Managers,gradient_2,11,0.44,0.4402,0.0002
+2111,Physicists and Astronomers,gradient_1,11,0.38,0.3798,0.0002
+2263,Environmental and Occupational Health and Hygiene Professionals,not_exposed,10,0.28,0.2802,0.0002
+2519,Software and Applications Developers and Analysts Not Elsewhere Classified,gradient_3,5,0.55,0.5502,0.0002
+3113,Electrical Engineering Technicians,not_exposed,6,0.27,0.2702,0.0002
+3255,Physiotherapy Technicians and Assistants,not_exposed,6,0.17,0.1702,0.0002
+8154,"Bleaching, Dyeing and Fabric Cleaning Machine Operators",not_exposed,12,0.21,0.2098,0.0002
+8321,Motorcycle Drivers,minimal_exposure,5,0.25,0.2498,0.0002
+9622,Odd Job Persons,not_exposed,7,0.11,0.1102,0.0002
+2421,Management and Organization Analysts,gradient_2,9,0.46,0.4601,0.0001
+2651,Visual Artists,not_exposed,8,0.21,0.2101,0.0001
+3213,Pharmaceutical Technicians and Assistants,minimal_exposure,9,0.3,0.2999,0.0001
+5151,"Cleaning and Housekeeping Supervisors in Offices, Hotels and Other Establishments",not_exposed,8,0.22,0.2201,0.0001
+2356,Information Technology Trainers,gradient_2,6,0.47,0.47,0.0
+2511,Systems Analysts,gradient_2,7,0.49,0.49,0.0
+3154,Air Traffic Controllers,minimal_exposure,8,0.31,0.31,0.0
+3211,Medical Imaging and Therapeutic Equipment Technicians,not_exposed,8,0.22,0.22,0.0
+3214,Medical and Dental Prosthetic Technicians,not_exposed,10,0.18,0.18,0.0
+3254,Dispensing Opticians,not_exposed,4,0.24,0.24,0.0
+3322,Commercial Sales Representatives,gradient_2,7,0.49,0.49,0.0
+3333,Employment agents and contractors,minimal_exposure,6,0.39,0.39,0.0
+3359,Government Regulatory AssociatePprofessionals Not Elsewhere Classified,minimal_exposure,4,0.36,0.36,0.0
+3513,Computer Network and Systems Technicians,gradient_2,6,0.43,0.43,0.0
+4132,Data Entry Clerks,gradient_4,5,0.7,0.7,0.0
+4311,Accounting and Bookkeeping Clerks,gradient_4,5,0.64,0.64,0.0
+6121,Livestock and Dairy Producers,not_exposed,13,0.17,0.17,0.0
+6129,Animal Producers Not Elsewhere Classified,not_exposed,9,0.2,0.2,0.0
+6130,Mixed Crop and Animal Producers,not_exposed,10,0.19,0.19,0.0
+7323,Print Finishing and Binding Workers,not_exposed,7,0.22,0.22,0.0
+9329,Manufacturing Labourers Not Elsewhere Classified,not_exposed,4,0.12,0.12,0.0
+9621,"Messengers, Package Deliverers and Luggage Porters",gradient_1,6,0.37,0.37,0.0

@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f1e8" />
+    <meta
+      name="description"
+      content="Năm lát cắt dữ liệu từ nghiên cứu ILO 2025 giúp hiểu AI đang thay đổi công việc ra sao."
+    />
+    <title>AI có lấy mất việc của bạn? — Câu chuyện bằng dữ liệu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="editorial.css" />
+    <script src="data/story-data.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="read-progress" aria-hidden="true">
+      <span id="progress-fill"></span>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="#dau-trang"
+        ><span class="brand-icon" aria-hidden="true">✳</span> chuyện nghề<b
+          >.</b
+        ></a
+      >
+      <nav aria-label="Điều hướng chính">
+        <a href="#cau-chuyen">Câu chuyện</a><a href="#nguon">Nguồn</a
+        ><a href="case-study.html">Phân tích</a>
+      </nav>
+      <span class="header-meta">Từ nghiên cứu ILO · 2025</span>
+    </header>
+
+    <main>
+      <section class="hero" id="dau-trang" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="overline">
+            <span class="line"></span> Một câu chuyện về AI và công việc
+          </p>
+          <h1 id="hero-title">
+            AI có lấy<br />mất việc<br /><em>của bạn?</em>
+          </h1>
+          <p class="hero-deck">
+            Hãy thử một dự đoán, rồi đối chiếu với dữ liệu ILO để xem AI có thể
+            tác động đến các công việc khác nhau ra sao.
+          </p>
+          <a class="start-link" href="#du-doan"
+            >Thử đoán trước khi xem dữ liệu
+            <span aria-hidden="true">↘</span></a
+          >
+        </div>
+        <div
+          class="hero-data"
+          aria-label="Minh họa khoảng một phần tư lao động toàn cầu làm nghề có tiếp xúc với AI tạo sinh"
+        >
+          <div class="hero-data-top">
+            <span>Hình dung về thế giới</span><span>100 người lao động</span>
+          </div>
+          <div
+            class="hero-dot-grid"
+            id="hero-dot-grid"
+            aria-hidden="true"
+          ></div>
+          <div class="hero-data-bottom">
+            <div class="hero-fraction">
+              <strong>≈1/4</strong
+              ><span>ở nghề có một mức độ tiếp xúc với AI tạo sinh</span>
+            </div>
+            <div class="dot-key">
+              <span
+                ><i class="key-dot key-dot--medium"></i> Nhóm tiếp xúc 1–3</span
+              ><span><i class="key-dot key-dot--high"></i> Nhóm cao nhất</span>
+            </div>
+          </div>
+          <p class="hero-note">
+            Mỗi ô biểu diễn xấp xỉ 1%. Hình được làm tròn để dễ nhìn.
+          </p>
+        </div>
+        <div class="hero-scroll"><span></span> Cuộn xuống để đọc tiếp</div>
+      </section>
+
+      <section class="bridge" id="du-doan" aria-labelledby="bridge-title">
+        <div class="bridge-copy">
+          <span class="bridge-index">Trước khi xem số liệu</span>
+          <h2 id="bridge-title">
+            Một con số toàn cầu không kể hết
+            <em>câu chuyện.</em>
+          </h2>
+          <p>
+            Mức tiếp xúc với AI thay đổi theo cơ cấu nghề của mỗi nền kinh tế.
+            Hãy thử đoán một con số trước khi xem biểu đồ.
+          </p>
+          <span class="bridge-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="guess-card">
+          <div class="guess-card-top">
+            <span>Một câu hỏi cho bạn</span><span>ILO · 2025</span>
+          </div>
+          <h3>
+            Trong 100 lao động ở nước thu nhập cao, <em>bao nhiêu người</em> ở
+            nghề có tiếp xúc với AI tạo sinh?
+          </h3>
+          <label class="guess-count" for="guess-range"
+            ><output id="guess-value">25</output><span>/100 người</span></label
+          >
+          <input
+            id="guess-range"
+            type="range"
+            min="0"
+            max="100"
+            value="25"
+            aria-label="Số người bạn dự đoán trong 100 lao động"
+          />
+          <div class="guess-ticks" aria-hidden="true">
+            <span>0</span><span>25</span><span>50</span><span>75</span
+            ><span>100</span>
+          </div>
+          <div class="guess-crowd">
+            <div class="guess-crowd-head">
+              <span>100 người lao động</span
+              ><strong id="guess-grid-label">Dự đoán của bạn</strong>
+            </div>
+            <div class="guess-grid" id="guess-grid" aria-hidden="true"></div>
+            <p class="guess-grid-caption" id="guess-grid-caption">
+              Mỗi ô sáng tương ứng một người trong dự đoán của bạn.
+            </p>
+          </div>
+          <button class="guess-submit" id="guess-submit" type="button">
+            Xem câu trả lời <span aria-hidden="true">↗</span>
+          </button>
+          <div class="guess-result" id="guess-result" hidden aria-live="polite">
+            <div class="guess-result-numbers">
+              <div>
+                <small>Bạn đoán</small><strong id="guess-yours">25</strong>
+              </div>
+              <div><small>Ước tính ILO</small><strong>34</strong></div>
+            </div>
+            <div
+              class="guess-compare"
+              id="guess-compare"
+              role="img"
+              aria-label="So sánh dự đoán với số liệu ILO"
+            >
+              <span class="guess-compare-line"></span
+              ><span class="guess-marker guess-marker--yours"></span
+              ><span class="guess-marker guess-marker--actual"></span>
+            </div>
+            <p id="guess-feedback" tabindex="-1"></p>
+            <div class="guess-actions">
+              <button id="guess-reset" type="button">Đoán lại</button
+              ><a href="#cau-chuyen"
+                >Khám phá dữ liệu <span aria-hidden="true">↘</span></a
+              >
+            </div>
+          </div>
+          <p class="guess-source">
+            Tỷ lệ dùng trong câu trả lời:
+            <a
+              href="https://www.ilo.org/sites/default/files/2025-05/Research%20brief_FINAL_15May2025_21.05.25_1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ILO Research Brief, trang 7 ↗</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <div class="story" id="cau-chuyen">
+        <aside
+          class="data-stage"
+          aria-label="Biểu đồ thay đổi theo từng chương"
+        >
+          <div class="stage-frame" id="stage-frame">
+            <div class="stage-header">
+              <span>Từ nghiên cứu ILO · 2025</span
+              ><span id="stage-counter">1 trong 5</span>
+            </div>
+
+            <section
+              class="viz viz--people"
+              data-viz="0"
+              aria-label="Khoảng 23,8% việc làm toàn cầu nằm trong bốn nhóm tiếp xúc với AI tạo sinh"
+            >
+              <div class="viz-heading">
+                <p>Chương 1 · Bức tranh chung</p>
+                <h2>Khoảng <em>24 trên 100</em></h2>
+              </div>
+              <div
+                class="people-grid"
+                id="people-grid"
+                aria-hidden="true"
+              ></div>
+              <div class="viz-legend">
+                <span
+                  ><i class="key-dot key-dot--medium"></i> 20,5% · Nhóm
+                  1–3</span
+                ><span
+                  ><i class="key-dot key-dot--high"></i> 3,3% · Nhóm 4</span
+                >
+              </div>
+              <p class="viz-caption">
+                Ô vuông được làm tròn; tỷ lệ ghi bên dưới là số liệu gốc.
+              </p>
+            </section>
+
+            <section
+              class="viz viz--spectrum"
+              data-viz="1"
+              hidden
+              aria-label="20,5% việc làm nằm ở nhóm tiếp xúc 1 đến 3, và 3,3% ở nhóm cao nhất"
+            >
+              <div class="viz-heading">
+                <p>Chương 2 · Mức độ tiếp xúc</p>
+                <h2>Nhóm cao nhất: <em>3,3%</em></h2>
+              </div>
+              <div class="spectrum-callout">
+                3,3<span>%</span
+                ><small>thuộc nhóm 4, mức tiếp xúc cao nhất</small>
+              </div>
+              <div class="spectrum-track" aria-hidden="true">
+                <span class="segment segment--outside"></span
+                ><span class="segment segment--medium"></span
+                ><span class="segment segment--high"></span>
+              </div>
+              <div class="spectrum-labels">
+                <span
+                  ><i class="key-dot key-dot--outside"></i> 76,2%<small
+                    >Ngoài nhóm 1–4*</small
+                  ></span
+                ><span
+                  ><i class="key-dot key-dot--medium"></i> 20,5%<small
+                    >Nhóm 1–3</small
+                  ></span
+                ><span
+                  ><i class="key-dot key-dot--high"></i> 3,3%<small
+                    >Nhóm 4</small
+                  ></span
+                >
+              </div>
+              <p class="viz-caption">
+                *Gồm nghề có tiếp xúc tối thiểu hoặc chưa được xếp vào nhóm tiếp
+                xúc. 76,2% được tính từ số liệu ILO.
+              </p>
+            </section>
+
+            <section
+              class="viz viz--income"
+              data-viz="2"
+              hidden
+              aria-label="Tỷ lệ việc làm trong các nhóm tiếp xúc là 11% ở nước thu nhập thấp và 34% ở nước thu nhập cao"
+            >
+              <div class="viz-heading">
+                <p>Chương 3 · Nhìn theo thu nhập</p>
+                <h2><span>Khoảng cách </span><em>11% ↔ 34%</em></h2>
+              </div>
+              <div class="axis-chart">
+                <div class="axis-labels" id="income-axis" aria-hidden="true">
+                  <span>0</span><span>10</span><span>20</span><span>30</span
+                  ><span>40%</span>
+                </div>
+                <div class="bar-row">
+                  <div class="bar-info">
+                    <span>Thu nhập thấp</span><strong>11%</strong>
+                  </div>
+                  <div class="bar-track">
+                    <span
+                      id="income-bar-low"
+                      class="bar-fill bar-fill--low"
+                      style="--bar-width: 27.5%"
+                    ></span>
+                  </div>
+                </div>
+                <div class="bar-row">
+                  <div class="bar-info">
+                    <span>Thu nhập cao</span><strong>34%</strong>
+                  </div>
+                  <div class="bar-track">
+                    <span
+                      id="income-bar-high"
+                      class="bar-fill bar-fill--high"
+                      style="--bar-width: 85%"
+                    ></span>
+                    <span
+                      class="income-guess-marker"
+                      id="income-guess-marker"
+                      hidden
+                      aria-hidden="true"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="income-guess-note"
+                id="income-guess-note"
+                hidden
+                aria-live="polite"
+              >
+                <span class="income-guess-key" aria-hidden="true"></span>
+                <strong
+                  >Bạn đoán <span id="income-guess-value">25%</span></strong
+                >
+                <span id="income-guess-difference"></span>
+              </div>
+              <p class="viz-caption">
+                Tỷ lệ việc làm thuộc bốn nhóm tiếp xúc, theo nhóm thu nhập quốc
+                gia.
+              </p>
+            </section>
+
+            <section
+              class="viz viz--gender"
+              data-viz="3"
+              hidden
+              aria-label="So sánh tỷ lệ việc làm ở nhóm tiếp xúc cao nhất theo giới"
+            >
+              <div class="viz-heading">
+                <p>Chương 4 · Nhìn theo giới</p>
+                <h2>Chênh lệch theo <em>giới</em></h2>
+              </div>
+              <div
+                class="gender-toggle"
+                role="group"
+                aria-label="Chọn phạm vi so sánh"
+              >
+                <button
+                  type="button"
+                  data-scope="world"
+                  aria-pressed="true"
+                  class="is-selected"
+                >
+                  Toàn cầu
+                </button>
+                <button type="button" data-scope="rich" aria-pressed="false">
+                  Nước thu nhập cao
+                </button>
+              </div>
+              <div class="gender-chart" aria-live="polite">
+                <div class="gender-axis" aria-hidden="true">
+                  <span>0</span><span>2</span><span>4</span><span>6</span
+                  ><span>8</span><span>10%</span>
+                </div>
+                <div class="gender-row">
+                  <div class="gender-info">
+                    <span>Nữ</span><strong id="female-value">4,7%</strong>
+                  </div>
+                  <div class="gender-track">
+                    <span
+                      id="female-bar"
+                      class="gender-fill gender-fill--female"
+                      style="--bar-width: 47%"
+                    ></span>
+                  </div>
+                </div>
+                <div class="gender-row">
+                  <div class="gender-info">
+                    <span>Nam</span><strong id="male-value">2,4%</strong>
+                  </div>
+                  <div class="gender-track">
+                    <span
+                      id="male-bar"
+                      class="gender-fill gender-fill--male"
+                      style="--bar-width: 24%"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <p class="viz-caption" id="gender-caption">
+                Tỷ lệ trong tổng việc làm của từng giới, không phải tỷ lệ dân
+                số.
+              </p>
+            </section>
+
+            <section
+              class="viz viz--method"
+              data-viz="4"
+              hidden
+              aria-label="Nghiên cứu xem xét gần 30.000 nhiệm vụ, sau đó xác định 112 nhóm nghề có mức tiếp xúc thuộc một trong bốn nhóm"
+            >
+              <div class="viz-heading">
+                <p>Chương 5 · Đằng sau con số</p>
+                <h2>Nhìn từ <em>nhiệm vụ</em></h2>
+              </div>
+              <div class="method-flow">
+                <div class="method-item">
+                  <strong>29.753</strong
+                  ><span
+                    >nhiệm vụ trong hệ phân loại nghề chi tiết của Ba Lan</span
+                  >
+                </div>
+                <span class="method-arrow" aria-hidden="true">↓</span>
+                <div class="method-item method-item--middle">
+                  <strong>4</strong
+                  ><span>mức tiếp xúc với AI tạo sinh của nghề</span>
+                </div>
+                <span class="method-arrow" aria-hidden="true">↓</span>
+                <div class="method-item">
+                  <strong>112</strong
+                  ><span>nhóm nghề ISCO-08 được xếp vào các mức 1–4</span>
+                </div>
+              </div>
+              <p class="viz-caption">
+                Các bước thuộc các tầng phân loại khác nhau; con số thể hiện quy
+                mô nghiên cứu, không phải phép chia trực tiếp.
+              </p>
+            </section>
+
+            <div class="stage-footer">
+              <span id="stage-footer-label"
+                >Một phần tư công việc trên toàn cầu</span
+              ><span aria-hidden="true">↓</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="chapters">
+          <article
+            class="chapter is-active"
+            id="toan-cau"
+            data-viz="0"
+            aria-labelledby="chapter-0-title"
+          >
+            <div class="chapter-inner">
+              <span class="chapter-index">Chương 1 <i></i> Quy mô</span>
+              <h2 id="chapter-0-title">
+                Cứ 100 người lao động, <em>khoảng 24</em> người ở nghề có tiếp
+                xúc với AI.
+              </h2>
+              <p>
+                Nghiên cứu ILO năm 2025 ước tính 20,5% việc làm toàn cầu thuộc
+                các mức tiếp xúc 1–3, và 3,3% thuộc mức 4. Gộp lại là 23,8%, gần
+                bằng một phần tư.
+              </p>
+              <p>
+                Đó là
+                <strong>khả năng công nghệ tác động đến nhiệm vụ</strong> của
+                nghề, không phải số người đã bị thay thế.
+              </p>
+              <a
+                class="chapter-source"
+                href="https://www.ilo.org/sites/default/files/2025-05/Research%20brief_FINAL_15May2025_21.05.25_1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Nguồn ILO · trang 7–8 ↗</a
+              >
+            </div>
+          </article>
+          <article
+            class="chapter"
+            id="muc-do"
+            data-viz="1"
+            aria-labelledby="chapter-1-title"
+          >
+            <div class="chapter-inner">
+              <span class="chapter-index">Chương 2 <i></i> Cường độ</span>
+              <h2 id="chapter-1-title">
+                Không phải mọi tiếp xúc đều <em>giống nhau.</em>
+              </h2>
+              <p>
+                ILO chia mức tiếp xúc thành bốn nhóm. Nhóm 4 có nhiều nhiệm vụ
+                với tiềm năng tự động hóa cao và tương đối đồng đều; nhóm này
+                chiếm <strong>3,3% việc làm toàn cầu</strong>.
+              </p>
+              <p>
+                Ngay cả ở nhóm 4, báo cáo lưu ý vẫn có các nhiệm vụ cần con
+                người thực hiện. Mức tiếp xúc cao không tự động trở thành mất
+                việc.
+              </p>
+              <a
+                class="chapter-source"
+                href="https://www.ilo.org/sites/default/files/2025-05/Research%20brief_FINAL_15May2025_21.05.25_1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Nguồn ILO · trang 3–4, 8 ↗</a
+              >
+            </div>
+          </article>
+          <article
+            class="chapter"
+            id="thu-nhap"
+            data-viz="2"
+            aria-labelledby="chapter-2-title"
+          >
+            <div class="chapter-inner">
+              <span class="chapter-index">Chương 3 <i></i> Địa lý</span>
+              <h2 id="chapter-2-title">
+                AI không tác động <em>đều khắp thế giới.</em>
+              </h2>
+              <p>
+                Ở các nước thu nhập cao, <strong>34%</strong> việc làm nằm trong
+                bốn nhóm tiếp xúc. Ở các nước thu nhập thấp, tỷ lệ là
+                <strong>11%</strong>.
+              </p>
+              <p>
+                Chênh lệch này phản ánh cơ cấu nghề nghiệp. Những nghề văn
+                phòng, tài chính và dịch vụ khách hàng có mức tiếp xúc cao tập
+                trung nhiều hơn ở các nền kinh tế thu nhập cao.
+              </p>
+              <a
+                class="chapter-source"
+                href="https://www.ilo.org/sites/default/files/2025-05/Research%20brief_FINAL_15May2025_21.05.25_1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Nguồn ILO · trang 7 ↗</a
+              >
+            </div>
+          </article>
+          <article
+            class="chapter"
+            id="gioi"
+            data-viz="3"
+            aria-labelledby="chapter-3-title"
+          >
+            <div class="chapter-inner">
+              <span class="chapter-index">Chương 4 <i></i> Phân bố</span>
+              <h2 id="chapter-3-title">
+                Cùng một công nghệ, <em>mức tiếp xúc khác nhau.</em>
+              </h2>
+              <p>
+                Trên toàn cầu, <strong>4,7%</strong> việc làm của nữ và
+                <strong>2,4%</strong> việc làm của nam thuộc nhóm tiếp xúc cao
+                nhất. Ở các nước thu nhập cao, hai tỷ lệ này lần lượt là
+                <strong>9,6%</strong> và <strong>3,5%</strong>.
+              </p>
+              <p>
+                Bấm lựa chọn trên biểu đồ để xem hai phạm vi. Sự khác biệt gắn
+                với việc phụ nữ và nam giới tập trung ở các nhóm nghề khác nhau.
+              </p>
+              <a
+                class="chapter-source"
+                href="https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Nguồn ILO Working Paper 140 ↗</a
+              >
+            </div>
+          </article>
+          <article
+            class="chapter"
+            id="phuong-phap"
+            data-viz="4"
+            aria-labelledby="chapter-4-title"
+          >
+            <div class="chapter-inner">
+              <span class="chapter-index"
+                >Chương 5 <i></i> Cách hiểu số liệu</span
+              >
+              <h2 id="chapter-4-title">
+                Đây là bản đồ <em>tiềm năng,</em> chưa phải tương lai đã xảy ra.
+              </h2>
+              <p>
+                ILO xây chỉ số từ dữ liệu nhiệm vụ, đánh giá của người lao động,
+                chuyên gia và mô hình AI. Nghiên cứu sử dụng gần
+                <strong>30.000 nhiệm vụ</strong>; 112 nhóm nghề được xếp vào bốn
+                mức tiếp xúc.
+              </p>
+              <p>
+                Các con số mô tả điều AI <em>có thể</em> làm với công nghệ tại
+                thời điểm nghiên cứu. Chúng không đo tốc độ doanh nghiệp áp dụng
+                AI, số việc làm mất đi hay việc làm mới xuất hiện.
+              </p>
+              <a
+                class="chapter-source"
+                href="https://www.ilo.org/sites/default/files/2025-05/Research%20brief_FINAL_15May2025_21.05.25_1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Nguồn ILO · trang 2–3, 7–8 ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <section
+        class="occupation"
+        id="theo-nghe"
+        aria-labelledby="occupation-title"
+      >
+        <div class="occupation-heading">
+          <div>
+            <span class="chapter-index"
+              >Nhìn gần hơn <i></i> Sáu nghề cụ thể</span
+            >
+            <h2 id="occupation-title">
+              Cùng là công việc. <em>Điểm nhiệm vụ rất khác.</em>
+            </h2>
+          </div>
+          <p>
+            Phụ lục của ILO công bố điểm trung bình của các nhiệm vụ theo nghề,
+            trên thang 0–1. Sáu nghề dưới đây được chọn để minh họa phổ giá trị;
+            đây không phải bảng xếp hạng tất cả nghề.
+          </p>
+        </div>
+        <div
+          class="occupation-chart"
+          role="img"
+          aria-label="Điểm nhiệm vụ trung bình của sáu nghề theo ILO Working Paper 140"
+        >
+          <div class="occupation-axis" aria-hidden="true">
+            <span>0</span><span>0,2</span><span>0,4</span><span>0,6</span
+            ><span>0,8</span><span>1,0</span>
+          </div>
+          <div id="occupation-rows"></div>
+        </div>
+        <div class="occupation-foot">
+          <p>
+            Điểm 0–1 là <strong>trung bình điểm nhiệm vụ</strong> của nghề trong
+            chỉ số ILO. Điểm 0,70 không có nghĩa 70% người làm nghề đó sẽ mất
+            việc.
+          </p>
+          <a
+            href="https://www.ilo.org/sites/default/files/2025-05/WP140_web.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Nguồn: ILO Working Paper 140, Phụ lục 1, bảng A1 ↗</a
+          >
+        </div>
+      </section>
+
+      <section class="takeaway" id="hanh-dong" aria-labelledby="takeaway-title">
+        <div class="takeaway-header">
+          <span class="chapter-index"
+            >Sau những con số <i></i> Điều nên nhớ</span
+          >
+          <h2 id="takeaway-title">
+            Câu hỏi hữu ích hơn là: <em>việc nào của tôi đang đổi?</em>
+          </h2>
+          <p>
+            Hãy thử phân tách một công việc thành các nhiệm vụ. Đặt AI vào bước
+            có thể kiểm tra được, rồi tự đánh giá kết quả và tác động trước khi
+            dùng.
+          </p>
+        </div>
+        <div class="takeaway-cards">
+          <div>
+            <b>01</b>
+            <h3>Tách nhiệm vụ</h3>
+            <p>Liệt kê các bước thực sự tạo nên công việc của bạn.</p>
+          </div>
+          <div>
+            <b>02</b>
+            <h3>Thử có kiểm soát</h3>
+            <p>Cho AI tạo một bản nháp hoặc gợi ý, với dữ liệu phù hợp.</p>
+          </div>
+          <div>
+            <b>03</b>
+            <h3>Kiểm chứng</h3>
+            <p>Đối chiếu nguồn, chỉnh sửa và chịu trách nhiệm với kết quả.</p>
+          </div>
+        </div>
+        <a class="back-to-top" href="#dau-trang"
+          >Đọc lại từ đầu <span>↑</span></a
+        >
+      </section>
+    </main>
+
+    <footer class="footer" id="nguon">
+      <div>
+        <strong>Chuyện nghề và AI</strong
+        ><span>Một câu chuyện bằng dữ liệu · 2025</span>
+      </div>
+      <div>
+        <strong>NGUỒN DỮ LIỆU</strong
+        ><a
+          href="https://www.ilo.org/publications/generative-ai-and-jobs-2025-update"
+          target="_blank"
+          rel="noopener noreferrer"
+          >ILO Research Brief ↗</a
+        ><a
+          href="https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure"
+          target="_blank"
+          rel="noopener noreferrer"
+          >ILO Working Paper 140 ↗</a
+        ><a href="case-study.html">Quy trình phân tích và kiểm tra dữ liệu →</a
+        >
+      </div>
+      <p>
+        Biểu đồ được dựng lại từ số liệu ILO. Tỷ lệ “ngoài nhóm 1–4” và tổng
+        23,8% là phép tính từ các tỷ lệ công bố; lưới 100 ô có làm tròn.
+      </p>
+    </footer>
+  </body>
+</html>

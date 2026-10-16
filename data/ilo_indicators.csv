@@ -1,0 +1,11 @@
+metric_id,value,unit,source_doc,source_page,definition
+world_gradients_1_3,20.5,percent_employment,brief,7,Global employment in exposure gradients 1-3
+world_gradient_4,3.3,percent_employment,brief,7,Global employment in gradient 4
+low_income_any,11,percent_employment,brief,7,Low-income country employment in gradients 1-4
+high_income_any,34,percent_employment,brief,7,High-income country employment in gradients 1-4
+world_female_gradient_4,4.7,percent_female_employment,brief,7,Global female employment in gradient 4
+world_male_gradient_4,2.4,percent_male_employment,brief,7,Global male employment in gradient 4
+high_income_female_gradient_4,9.6,percent_female_employment,wp140,44,High-income female employment in gradient 4
+high_income_male_gradient_4,3.5,percent_male_employment,wp140,44,High-income male employment in gradient 4
+task_count,29753,tasks,wp140,36,Tasks in Polish occupational classification scored by the model
+exposed_occupation_count,112,occupations,brief,7,ISCO-08 four-digit occupations in gradients 1-4

@@ -1,0 +1,651 @@
+/* A warmer, magazine-like visual layer over the story layout. */
+:root {
+  --navy: #2d2b26;
+  --paper: #f7f1e8;
+  --ink: #302c27;
+  --cyan: #718e70;
+  --orange: #bd5b3d;
+  --muted: #706f64;
+  --display-serif:
+    "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+}
+
+body {
+  background: var(--paper);
+}
+
+::selection {
+  background: #e9caa8;
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline-color: #a9472b;
+}
+
+.read-progress {
+  height: 4px;
+}
+
+.read-progress span {
+  background: #b65b3d;
+}
+
+.site-header {
+  color: var(--ink);
+}
+
+.brand {
+  gap: 0.35rem;
+  font-family: var(--display-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+}
+
+.brand b,
+.brand-icon {
+  color: var(--orange);
+}
+
+.brand-icon {
+  width: auto;
+  height: auto;
+  border: 0;
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+}
+
+.site-header nav a,
+.header-meta {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.header-meta {
+  color: #796f63;
+}
+
+.hero {
+  background: #f8f2e8;
+  color: var(--ink);
+}
+
+.hero::before {
+  background:
+    radial-gradient(circle at 83% 31%, #e1e8d9 0 19%, transparent 19.2%),
+    radial-gradient(circle at 13% 92%, #efe3d4 0 16%, transparent 16.2%);
+  mask-image: none;
+}
+
+.overline {
+  color: #96563d;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.overline .line {
+  width: 36px;
+  height: 1px;
+}
+
+.hero h1,
+.bridge-copy h2,
+.guess-card h3,
+.viz-heading h2,
+.chapter h2,
+.occupation-heading h2,
+.takeaway h2,
+.takeaway-cards h3 {
+  font-family: var(--display-serif);
+}
+
+.hero h1 {
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+}
+
+.hero h1 em,
+.bridge-copy h2 em,
+.chapter h2 em,
+.occupation-heading h2 em {
+  color: var(--orange);
+}
+
+.hero-deck {
+  color: #5f5e54;
+}
+
+.start-link {
+  min-width: 0;
+  border-radius: 100px;
+  background: var(--orange);
+  box-shadow: 0 7px 0 #e1cbbb;
+  color: #fffaf3;
+  font-weight: 700;
+}
+
+.start-link:hover {
+  background: #a74830;
+}
+
+.hero-data {
+  border: 1px solid #cdbfab;
+  border-radius: 2px;
+  background: #fffaf0;
+  box-shadow: 16px 18px 0 #e5d9c9;
+  color: var(--ink);
+  transform: rotate(1deg);
+}
+
+.hero-data::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 45px);
+  width: 90px;
+  height: 24px;
+  background: #d9b999ad;
+  transform: rotate(-4deg);
+}
+
+.hero-data-top,
+.stage-header,
+.stage-footer {
+  color: #655e52;
+  font-size: 0.73rem;
+  font-weight: 650;
+  letter-spacing: 0.025em;
+}
+
+.data-cell,
+.key-dot {
+  border-radius: 50%;
+}
+
+.data-cell {
+  background: #d7d3c7;
+}
+
+.data-cell--medium,
+.key-dot--medium {
+  background: #799778;
+}
+
+.data-cell--high,
+.key-dot--high {
+  background: #c66847;
+}
+
+.key-dot--outside {
+  background: #c8c7bb;
+}
+
+.hero-data-bottom {
+  border-color: #d6cab9;
+}
+
+.hero-fraction strong {
+  color: #51775b;
+  font-family: var(--display-serif);
+}
+
+.hero-fraction span,
+.dot-key {
+  color: #625e53;
+}
+
+.hero-note,
+.hero-scroll {
+  color: #81796c;
+}
+
+.bridge {
+  border-color: #d7cabb;
+  background: #efe6d9;
+}
+
+.bridge-index,
+.chapter-index {
+  color: #a3593e;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  text-transform: none;
+}
+
+.bridge .bridge-copy p {
+  color: #625f56;
+}
+
+.bridge-arrow {
+  color: #b5684a;
+}
+
+.guess-card,
+.guess-card.is-revealed {
+  border: 1px solid #cdbca9;
+  border-radius: 2px;
+  background: #fffaf1;
+  box-shadow: 18px 18px 0 #dfd1bf;
+  color: var(--ink);
+}
+
+.guess-card-top,
+.guess-crowd-head,
+.guess-result-numbers small {
+  color: #6e675a;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.guess-card h3 em,
+.guess-count,
+.guess-result-numbers strong {
+  color: var(--orange);
+}
+
+.guess-count span,
+.guess-ticks,
+.guess-crowd-head strong {
+  color: #655f54;
+}
+
+#guess-range {
+  background: linear-gradient(
+    90deg,
+    #bd5b3d var(--guess-position, 25%),
+    #ded1c2 var(--guess-position, 25%)
+  );
+}
+
+#guess-range::-webkit-slider-thumb {
+  border-color: #fffaf1;
+  background: #bd5b3d;
+  box-shadow: 0 0 0 2px #bd5b3d;
+}
+
+#guess-range::-moz-range-thumb {
+  border-color: #fffaf1;
+  background: #bd5b3d;
+  box-shadow: 0 0 0 2px #bd5b3d;
+}
+
+.guess-crowd {
+  border: 1px solid #d6c9b8;
+  background: #f4eadc;
+}
+
+.guess-grid span {
+  border-radius: 50%;
+  background: #d6cec1;
+}
+
+.guess-grid span.is-guessed {
+  background: #bd5b3d;
+}
+
+.guess-grid span.is-actual {
+  background: #718e70;
+}
+
+.guess-card.is-revealed .guess-crowd-head strong,
+.guess-result-numbers div:last-child strong {
+  color: #547554;
+}
+
+.bridge .guess-grid-caption,
+.bridge .guess-result p,
+.bridge .guess-source,
+.guess-source a {
+  color: #6d665b;
+}
+
+.guess-submit {
+  border-radius: 100px;
+  background: #2f342d;
+  color: #fffaf1;
+}
+
+.guess-submit:hover {
+  background: #4b5548;
+}
+
+.guess-compare-line {
+  background: #bfb4a5;
+}
+
+.guess-marker {
+  border-color: #fffaf1;
+}
+
+.guess-marker--yours {
+  background: #bd5b3d;
+  box-shadow: 0 0 0 2px #bd5b3d;
+}
+
+.guess-marker--actual {
+  background: #718e70;
+  box-shadow: 0 0 0 2px #718e70;
+}
+
+.guess-actions button {
+  border-color: #817666;
+  color: #4c4a40;
+}
+
+.guess-actions a {
+  color: #a84d33;
+}
+
+.story,
+.chapter {
+  background: #faf6ee;
+}
+
+.data-stage {
+  background: #e6eadf;
+}
+
+.stage-frame,
+.stage-frame[data-active="1"],
+.stage-frame[data-active="2"],
+.stage-frame[data-active="3"],
+.stage-frame[data-active="4"] {
+  border: 1px solid #c9d1c2;
+  border-radius: 2px;
+  background: #f2f2e9;
+  color: var(--ink);
+}
+
+.stage-frame {
+  --stage-accent: #5e7d62;
+}
+
+.stage-frame[data-active="1"] {
+  --stage-accent: #b55a3b;
+  background: #f6efe8;
+}
+
+.stage-frame[data-active="2"] {
+  --stage-accent: #a76636;
+  background: #f7f1e6;
+}
+
+.stage-frame[data-active="3"] {
+  --stage-accent: #985d65;
+  background: #f5f0ec;
+}
+
+.stage-frame[data-active="4"] {
+  --stage-accent: #5e7d62;
+  background: #eff2e8;
+}
+
+.stage-frame::before {
+  background: radial-gradient(
+    circle at 86% 86%,
+    #dfe7d76e 0 16%,
+    transparent 16.2%
+  );
+  mask-image: none;
+}
+
+.viz-heading p {
+  font-size: 0.79rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.viz-heading h2 {
+  letter-spacing: -0.055em;
+}
+
+.viz-caption,
+.spectrum-labels small {
+  color: #6d6d60;
+}
+
+.people-grid .data-cell,
+.people-grid .data-cell--medium:not(.is-revealed),
+.people-grid .data-cell--high:not(.is-revealed) {
+  background: #cdd0c4;
+}
+
+.people-grid .data-cell--medium.is-revealed {
+  background: #799778;
+}
+
+.people-grid .data-cell--high.is-revealed {
+  background: #c66847;
+}
+
+.viz-legend,
+.spectrum-labels > span {
+  color: #43463d;
+}
+
+.spectrum-callout {
+  color: #b55a3b;
+  font-family: var(--display-serif);
+}
+
+.spectrum-callout small {
+  color: #625f56;
+}
+
+.spectrum-track {
+  border-color: #bfc5b7;
+  border-radius: 100px;
+}
+
+.segment--outside {
+  background: #cbd0c3;
+}
+
+.axis-labels,
+.gender-axis {
+  border-color: #aebaaa;
+  color: #66685d;
+}
+
+.bar-info strong,
+.gender-info strong,
+.method-item strong {
+  font-family: var(--display-serif);
+}
+
+.bar-track,
+.gender-track {
+  border-color: #aebaaa;
+  background: repeating-linear-gradient(
+    90deg,
+    #8f9d8e3c 0 1px,
+    transparent 1px 25%
+  );
+}
+
+.bar-fill--low {
+  background: #9aaea0;
+}
+
+.bar-fill--high {
+  background: #d8a25c;
+}
+
+.income-guess-marker {
+  box-shadow: 0 0 0 2px #f7f1e6;
+}
+
+.income-guess-marker::before {
+  border-color: #f7f1e6;
+}
+
+.income-guess-note {
+  border-color: #d7ad91;
+  background: #f5e8da;
+}
+
+.income-guess-note strong {
+  color: #9f492e;
+}
+
+.income-guess-note > span:last-child {
+  color: #5d5b51;
+}
+
+.gender-toggle {
+  border-color: #aebaaa;
+}
+
+.gender-toggle button {
+  color: #5c6257;
+}
+
+.gender-toggle button.is-selected {
+  color: #fffaf1;
+}
+
+.gender-fill--female {
+  background: #bd7770;
+}
+
+.gender-fill--male {
+  background: #718e70;
+}
+
+.method-item,
+.method-item--middle {
+  border-color: #c8d2c2;
+  background: #fffcf56e;
+}
+
+.method-item span {
+  color: #595f53;
+}
+
+.chapter {
+  border-color: #dfd6c9;
+  opacity: 1;
+}
+
+.chapter p,
+.occupation-heading p,
+.occupation-foot {
+  color: #5e5e55;
+}
+
+.chapter p strong {
+  color: #2f312a;
+}
+
+.chapter-source,
+.occupation-foot a {
+  color: #a64f35;
+  border-color: #a64f35;
+}
+
+.occupation {
+  background: #f1e6da;
+}
+
+.occupation-chart {
+  border-top: 1px solid #ac9c88;
+  background: #fffaf1;
+}
+
+.occupation-axis,
+.occupation-name small {
+  color: #726c5f;
+}
+
+.occupation-row {
+  border-color: #d8cbbc;
+}
+
+.occupation-row:hover {
+  background: #f4eadd;
+}
+
+.occupation-track {
+  border-color: #c8bdac;
+  background: repeating-linear-gradient(
+    90deg,
+    #a999853d 0 1px,
+    transparent 1px 20%
+  );
+}
+
+.takeaway {
+  background: #dbe5d3;
+  color: #30382c;
+}
+
+.takeaway .chapter-index {
+  color: #4b704f;
+}
+
+.takeaway h2 em {
+  color: #a94f35;
+}
+
+.takeaway-cards > div {
+  border-color: #769273;
+  background: #f5f2e8;
+}
+
+.footer {
+  background: #36382f;
+  color: #f4eee3;
+}
+
+.footer strong {
+  color: #f4eee3;
+}
+
+@media (max-width: 820px) {
+  .hero-data {
+    transform: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand {
+    font-size: 1.1rem;
+  }
+
+  .brand-icon {
+    font-size: 1.35rem;
+  }
+
+  .site-header nav a {
+    font-size: 0.7rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(4.1rem, 13vw, 5.5rem);
+  }
+
+  .hero-data,
+  .guess-card,
+  .guess-card.is-revealed {
+    box-shadow: 10px 10px 0 #dfd1bf;
+  }
+
+  .hero-data-top,
+  .stage-header,
+  .stage-footer {
+    font-size: 0.6rem;
+  }
+
+  .viz-heading p {
+    font-size: 0.63rem;
+  }
+
+  .guess-card-top,
+  .guess-crowd-head {
+    font-size: 0.64rem;
+  }
+}

@@ -1,5 +1,7 @@
 # AI có lấy mất việc của bạn?
 
+[Xem trang scrollytelling](https://tridpt.github.io/ilo-genai-job-exposure/) · [Xem case study phân tích dữ liệu](https://tridpt.github.io/ilo-genai-job-exposure/case-study.html)
+
 Một trang scrollytelling tiếng Việt dựng lại số liệu từ nghiên cứu ILO năm 2025, trình bày theo phong cách bài báo minh họa. Trước khi đọc, người xem có thể dự đoán tỷ lệ việc làm tiếp xúc với AI tạo sinh ở nước thu nhập cao: kéo thanh để tô sáng lưới 100 lao động, xem câu trả lời rồi so sánh với ước tính 34% của ILO. Dự đoán cũng xuất hiện lại trên biểu đồ thu nhập ở chương 3; trục biểu đồ tự mở rộng đến 40%, 60%, 80% hoặc 100% để đặt dự đoán và số liệu ILO trên cùng một thang đo. Năm chương có đồ họa cố định thay đổi theo cuộn: lưới 100 người lao động, phổ mức tiếp xúc, so sánh nhóm nước theo thu nhập, so sánh theo giới có nút chuyển phạm vi, và sơ đồ phương pháp nghiên cứu. Phần cuối so sánh điểm nhiệm vụ của sáu nghề cụ thể.
 
 ![Giao diện mở đầu của dự án](docs/preview-desktop.png)

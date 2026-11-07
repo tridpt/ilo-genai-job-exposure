@@ -9,7 +9,10 @@ PREVIEWS = ROOT / "docs"
 PREVIEWS.mkdir(exist_ok=True)
 
 with sync_playwright() as playwright:
-    browser = playwright.chromium.launch(channel="msedge", headless=True)
+    try:
+        browser = playwright.chromium.launch(channel="msedge", headless=True)
+    except Exception:
+        browser = playwright.chromium.launch(headless=True)
     for device, width, height in (("desktop", 1440, 900), ("mobile", 390, 844), ("compact", 320, 568)):
         page = browser.new_page(viewport={"width": width, "height": height}, device_scale_factor=1)
         page.emulate_media(reduced_motion="reduce")

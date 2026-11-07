@@ -123,8 +123,8 @@ genderButtons.forEach((button) => {
     });
     femaleValue.textContent = formatPercent(values.female);
     maleValue.textContent = formatPercent(values.male);
-    femaleBar.style.setProperty("--bar-width", `${values.female * 10}%`);
-    maleBar.style.setProperty("--bar-width", `${values.male * 10}%`);
+    femaleBar.style.setProperty("--bar-width", `${Math.min(100, values.female * 10)}%`);
+    maleBar.style.setProperty("--bar-width", `${Math.min(100, values.male * 10)}%`);
   });
 });
 
